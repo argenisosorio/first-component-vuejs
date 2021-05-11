@@ -14,6 +14,7 @@ new Vue({
 })
 */
 
+/* Segundo ejemplo
 new Vue({
   el: '#app',
   data: {
@@ -23,4 +24,25 @@ new Vue({
       { title: 'Interestellar', image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcRf61mker2o4KH3CbVE7Zw5B1-VogMH8LfZHEaq3UdCMLxARZAB' }
     ]
   }
+})
+*/
+
+new Vue({
+  el: '#app',
+  data: {
+    movies: [
+      { title: 'Regreso al Futuro', image: 'http://es.web.img3.acsta.net/pictures/14/04/03/13/45/034916.jpg' },
+      { title: 'Matrix', image: 'http://t0.gstatic.com/images?q=tbn:ANd9GcQq3pIz-aKgkmYX1dJ-EL-AlHSPcOO7wdqRIJ5gJy9qNinXpmle' },
+      { title: 'Interestellar', image: 'http://t1.gstatic.com/images?q=tbn:ANd9GcRf61mker2o4KH3CbVE7Zw5B1-VogMH8LfZHEaq3UdCMLxARZAB' }
+    ]
+  },
+  template: `
+    <div>
+      <movie-card v-for="(movie, index) in movies"
+        v-bind:key="index"
+        v-bind:title="movie.title"
+        v-bind:image="movie.image">
+      </movie-card>
+    </div>
+  `
 })
