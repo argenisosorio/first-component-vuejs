@@ -2,4 +2,6 @@
 
 <p>Basic example of how to create a component in VueJS.</p>
 
+<p>v-for-example branch: example v-for in vuejs</p>
+
 Based in: <a href="https://github.com/carlosazaustre/carlosazaustre.es/blob/master/content/posts//desarrollo-basado-en-componentes-con-vue-js/index.mdx">https://github.com/carlosazaustre/carlosazaustre.es/blob/master/content/posts//desarrollo-basado-en-componentes-con-vue-js/index.mdx</a>
